@@ -2,202 +2,176 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bayanda</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bayanda Buthelezi</title>
 </head>
 
-<body id="js-scroll">
-    <div class="wrapper">
-        <div class="container">
-            <div class="navbar">
-                <div class="navbar-container">
-                    <div class="site-title">Bayanda</div>
-                    <div class="site-type">Download Cv</div>
-                    <div class="site-year">2021</div>
-                </div>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Bayanda</a>
             </div>
 
-            <div class="divider"></div>
-
-            <div class="header">
-                <div class="header-container">
-                    <h1>Bayanda Buthelezi<br />Web<br />&nbsp; &nbsp; &nbsp; &nbsp;Developer</h1>
-                </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                </ul>
             </div>
 
-            <div class="hero-image">
-                <div class="hero-image-container" data-scroll data-scroll-speed="2">
-                    <img src="Assets/bayanda.jpg" alt="" />
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
+        </nav>
+    </header>
 
-            <div class="whitespace"></div>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>Web</span><br>Developer</h1>
 
-            <div class="section-header">
-                <div class="section-header-container">
-                    <div class="section-title">about-me</div>
-                    <div class="section-order">/01</div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down for more.</a>
                 </div>
+
+                <img src="Assets/bayanda.jpg" alt="Picture of Bayanda Buthelezi" class="home__img">
             </div>
+        </section>
 
-            <div class="divider"></div>
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
 
-            <section class="about">
-                <div class="about-container">
-                    <p>
-                        I'm a South African Web developer and aspiring sofware engineer, i consider myself a very diligent person that loves all things tech, from web development & app development to game development & financial technology.
-                    </p>
-                    <p>
-                        When I am not building something or learning a programming language, i am solving mazes.
-                    </p>
-                    <p>I am very much eager to be part of a tech company that will help me grow as a dev & have me play a part in the building of out-of-the-box solutions.</p>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="Assets/bayanda.jpg" alt="">
                 </div>
-            </section>
 
-            <div class="whitespace"></div>
+                <div>
+                    <h2 class="about__subtitle">Bayanda F. Buthelezi</h2>
+                    <span class="about__profession">Web Developer</span>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
 
-            <div class="section-header">
-                <div class="section-header-container">
-                    <div class="section-title">a few of my projects</div>
-                    <div class="section-order">/02</div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <section class="project">
-                <div class="project-container">
-                    <div>
-                        <nav class="menu">
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="https://maisonmargielalandingpage.netlify.app/">/ Maison Margiela</a>
-                                <img class="menu__item-img" src="Assets/Maison Margiela.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Maison Margiela</span>
-                                        <span>Maison Margiela</span>
-                                        <span>Maison Margiela</span>
-                                        <span>Maison Margiela</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider"></div>
-
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="">/ Meet</a>
-                                <img class="menu__item-img" src="Assets/Meet.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner">
-                                        <span>Meet</span>
-                                        <span>Meet</span>
-                                        <span>Meet</span>
-                                        <span>Meet</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider"></div>
-
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="https://iphone13pro.netlify.app/">/ iPhone 13 Pro</a>
-                                <img class="menu__item-img" src="Assets/iPhone 13 Pro.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner">
-                                        <span>iPhone 13 Pro</span>
-                                        <span>iPhone 13 Pro</span>
-                                        <span>iPhone 13 Pro</span>
-                                        <span>iPhone 13 Pro</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider"></div>
-
-
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="https://blackspiderdrone.netlify.app/">/ Black Spider</a>
-                                <img class="menu__item-img" src="Assets/Black Spider.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner" aria-hidden="true">
-                                        <span>Black Spider</span>
-                                        <span>Black Spider</span>
-                                        <span>Black Spider</span>
-                                        <span>Black Spider</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider"></div>
-
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="https://404pagenotfoxnd.netlify.app/">/ 404 Page</a>
-                                <img class="menu__item-img" src="Assets/404 Page.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner">
-                                        <span>404 Page</span>
-                                        <span>404 Page</span>
-                                        <span>404 Page</span>
-                                        <span>404 Page</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider"></div>
-
-                            <div class="menu__item">
-                                <a class="menu__item-link" target="blank" href="https://golflefluer.netlify.app/">/ Golf le fluer</a>
-                                <img class="menu__item-img" src="Assets/Golf.PNG" />
-                                <div class="marquee">
-                                    <div class="marquee__inner">
-                                        <span>Golf le fluer</span>
-                                        <span>Golf le fluer</span>
-                                        <span>Golf le fluer</span>
-                                        <span>Golf le fluer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </section>
-
-            <div class="whitespace"></div>
-
-            <div class="section-header">
-                <div class="section-header-container">
-                    <div class="section-title">socials</div>
-                    <div class="section-order">/04</div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <section class="socials">
-                <div class="socials-container">
-                    <div class="socials-id ln"><a href="">linkedin</a></div>
-                    <div class="socials-id gh"><a href="">github</a></div>
-                    <div class="socials-id tw"><a href="">twitter</a></div>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <div class="footer">
-                <div class="navbar">
-                    <div class="navbar-container">
-                        <div class="site-title">Bayanda</div>
-                        <div class="site-year">0653265940, buthelezibayanda241@gmail.com</div>
+                    <div class="about__social">
+                        <a href="https://www.linkedin.com/in/bayanda-fedrick-buthelezi/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/BayandaButhelezi" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://twitter.com/cruiserwghtcoke" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
                     </div>
                 </div>
             </div>
-            <br />
-        </div>
-    </div>
+        </section>
+
+        
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Web Development</h3>
+                    <span class="skills__name">Html</span>
+                    <span class="skills__name">Css</span>
+                    <span class="skills__name">Javascript</span>
+                    <span class="skills__name">Python</span>
+                </div>
+
+                <div class="skills__img">
+                    <img src="Assets/bayanda.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="Assets//Maison Margiela.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://maisonmargielalandingpage.netlify.app/" class="portfolio__link-name">Maison Margiela Landing Pae</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="Assets/3D Book Effect.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://tylerthecreatorbook.netlify.app/" class="portfolio__link-name">3D Book Hover Effect</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="Assets/Black Spider.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://blackspiderdrone.netlify.app" class="portfolio__link-name">Drone Landing Page</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="Assets/Meet.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Meeet Landing Page</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="Assets/Chicken Licken.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://iphone13pro.netlify.app/" class="portfolio__link-name">Chicken Licken</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="Assets/404 Page.PNG" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://404pagenotfoxnd.netlify.app/" class="portfolio__link-name">404 Error Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Bayanda Buthelezi</h2>
+                    <p class="footer__text">That is it folks.</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://www.linkedin.com/in/bayanda-fedrick-buthelezi/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/BayandaButhelezi" class="footer__social"><i class='bx bxl-github' ></i></a>
+                    <a href="https://twitter.com/cruiserwghtcoke" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="Assets/js/main.js"></script>
 </body>
 
 </html>
