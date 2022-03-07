@@ -1,173 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bayanda Buthelezi</title>
+		<link rel="stylesheet" href="CSS/style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Bayanda Buthelezi</title>
-</head>
+                <h1 class="header">The website is Coming Soon.</h1>
 
-<body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Bayanda Buthelezi</a>
-            </div>
+			<div class="titles">
+				<div class="title title-1"><h1>Bayanda<span class="red" style="color: red;">.</span></h1></div>
+				<div class="title title-2"><h1>Fedrick<span class="yellow" style="color: yellow;">.</span></h1></div>
+				<div class="title title-3"><h1>Buthelezi<span class="green" style="color: green;">.</span></h1></div>
+			</div>
+			<ul class="blocks">
+				<li class="block-1 block"></li>
+				<li class="block-2 block"></li>
+				<li class="block-3 block"></li>
+				<li class="block-4 block"></li>
+				<li class="block-5 block"></li>
+				<li class="block-6 block"></li>
+			</ul>
+		</div>
+		<script>
+			TweenMax.staggerFrom(
+				".titles > div",
+				0.8,
+				{
+					x: "-60",
+					ease: Power3.easeInOut,
+					opacity: "0",
+				},
+				2
+			);
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                </ul>
-            </div>
+			TweenMax.staggerTo(
+				".titles > div",
+				0.8,
+				{
+					x: "60",
+					ease: Power3.easeInOut,
+					delay: 1.2,
+					opacity: "0",
+				},
+				2
+			);
+			TweenMax.staggerFrom(
+				"li",
+				3,
+				{
+					x: "-1600",
+					delay: 4.2,
+					ease: Expo.easeInOut,
+				},
+				0.16
+			);
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
+			TweenMax.staggerTo(
+				"li",
+				2.6,
+				{
+					x: "1600",
+					delay: 6.8,
+					ease: Expo.easeInOut,
+				},
+				0.2
+			);
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <h1 class="home__title"><span>Front-End</span><br> Web Dev</h1>
+			var textWrapper = document.querySelector(".header");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down for more.</a>
-                </div>
-
-                <img src="Assets/Memoji.PNG" alt="Picture of Bayanda Buthelezi" class="home__img">
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="Assets/memoji2.PNG" alt="Picture of Project">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Bayanda Buthelezi</h2>
-                    <span class="about__profession">Front-End Web Developer</span>
-                    <p class="about__text">As mentioned above, I am a South African [Front-End] Web Developer and Software Engineer. I'm a very diligent web developer that loves all things tech (from web development to software engineering & game development). Very much eager to be part of a tech company that will help me grow as a web dev & have me play a part in the building of out-of-the-box solutions that will make a difference to peoples lives.
-                    </p>
-
-                    <div class="about__social">
-                        <a href="https://www.linkedin.com/in/bayanda-fedrick-buthelezi/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://github.com/BayandaButhelezi" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                        <a href="https://twitter.com/fedrick_creates" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills & Languages</h2>
-
-            <div class="skills__container bd-grid">
-                <div class="skills__box">
-                    <h3 class="skills__subtitle">Web Development</h3>
-                    <br>
-                    <span class="skills__name">HTML</span>
-                    <span class="skills__name">CSS</span>
-                    <span class="skills__name">Javascript</span>
-                    <span class="skills__name">Python</span>
-                    <span class="skills__name">React (beginner)</span>
-                </div>
-
-                <div class="skills__img">
-                    <img src="Assets/memoji3.PNG" alt="Picture of Project">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">My Projects</h2>
-
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__img">
-                    <img src="Assets/Chirp.png" alt="Picture of Project">
-
-                    <div class="portfolio__link">
-                        <a target="blank" href="https://jonathanspencer.netlify.app" class="portfolio__link-name">Chirp</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="Assets/Developer Portfolio.PNG" alt="Picture of Project">
-
-                    <div class="portfolio__link">
-                        <a target="blank" href="https://jonathanspencer.netlify.app" class="portfolio__link-name">Developer Site</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="Assets/Apple.PNG" alt="Picture of Project">
-
-                    <div class="portfolio__link">
-                        <a target="blank" href="https://appleiphone13pro.netlify.app" class="portfolio__link-name">Apple iPhone 13 - Product Page</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="Assets/Snippet.png" alt="Picture of Project">
-
-                    <div class="portfolio__link">
-                        <a target="blank" href="https://fisforfamily.netlify.app" class="portfolio__link-name">Snippet Product Page</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="Assets/Unifeed.png" alt="Picture of Project">
-
-                    <div class="portfolio__link">
-                        <a target="blank" href="https://fisforfamily.netlify.app" class="portfolio__link-name">Unifeed Blog - Home Page</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Bayanda Buthelezi</h2>
-                    <p class="footer__text">That is it folks. Follow me on twitter for tech tips.</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Projects</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.linkedin.com/in/bayanda-fedrick-buthelezi/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/BayandaButhelezi" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a href="https://twitter.com/fedrick_creates" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                </div>
-
-
-            </div>
-        </footer>
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="Assets/js/main.js"></script>
-</body>
-
+			anime.timeline().add({
+				targets: ".header .letter",
+				opacity: [0, 1],
+				translateY: [80, 0],
+				translateZ: 0,
+				easing: "easeOutExpo",
+				duration: 1500,
+				delay: (el, i) => 8000 + 40 * i,
+			});
+		</script>
+	</body>
 </html>
